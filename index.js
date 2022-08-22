@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-  res.send('error404')
+  res.render('error404')
 })
 
 // Listen for Connections
