@@ -13,6 +13,7 @@ app.use(express.static("public"))
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
+  console.log('localhost:3000')
   res.render('home')
 })
 
