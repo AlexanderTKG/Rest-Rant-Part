@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
-  console.log('localhost:3000')
+  console.log('localhost:3000:Homepage')
   res.render('home')
 })
 

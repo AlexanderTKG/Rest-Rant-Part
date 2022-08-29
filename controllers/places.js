@@ -4,10 +4,12 @@ const places = require('../models/places')
 
 // GET/places
 router.get('/', (req, res) => {
+  console.log('localhost:3000/places:Places')
   res.render('places/index', {places})
   })
 
 router.get('/new', (req, res) => {
+  console.log('localhost:3000/places/new:Add Places')
   res.render('places/new')
 })
 
