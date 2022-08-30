@@ -20,7 +20,7 @@ function show (data) {
                     Description
                 </h1>
                 <a>
-                    Location in phoenix, AZ and serving Coffe, Bakery
+                    Location in {data.place.city}, {data.place.state} and serving {data.place.name}, {data.place.cuisines}
                 </a>
             </div>
             <div>
