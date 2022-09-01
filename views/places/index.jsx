@@ -2,11 +2,11 @@ const React = require('react');
 const Def = require('../default');
 
 function index (data) {
-  let placesFormatted = data.places.map((place, index) => {
+  let placesFormatted = data.places.map((place) => {
     return (
       <div className='col-sm-6'>
         <h2>
-          <a href={`/places/${index}`}>
+          <a href={`/places/${place.id}`}>
           {place.name}
           </a>
         </h2>
@@ -26,6 +26,10 @@ function index (data) {
         <main>
             <h1>Places to Rant or Rave About</h1>
             <div className='row'>
+              <div className='col-sm-6 col-md-4 col-lg-3'>BOX</div>
+              <div className='col-sm-6 col-md-4 col-lg-3'>BOX</div>
+              <div className='col-sm-6 col-md-4 col-lg-3'>BOX</div>
+              <div className='col-sm-6 col-md-4 col-lg-3'>BOX</div>
               {placesFormatted}
             </div>
         </main>
